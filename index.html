@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<lang="es-es">
+< lang="es-es">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/Team-Boxed.css" />
     <link rel="stylesheet" href="./assets/css/Video.css" />
+    <link rel="stylesheet" href="./assets/css/Contributors.css" />
   </head>
 
 
@@ -48,7 +49,7 @@
     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="./assets/img/logo.png" style="width: 80px; height: 80px" /></a
+          ><img src="assets/img/logo.png" style="width: 80px; height: 80px" /></a
         ><button
           data-bs-toggle="collapse"
           class="navbar-toggler navbar-toggler-right"
@@ -61,7 +62,13 @@
         >
           <i class="fa fa-bars"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <select onchange="change()" id="language">
+            <option value="en-US">English (US)</option>
+            <option value="es-ES">Español</option>
+          </select>
+
           <ul class="navbar-nav ms-auto">
             <li class="nav-item nav-link">
               <a class="nav-link" href="#nosotros">ABOUT US</a>
@@ -113,7 +120,7 @@
             class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder"
           >
             <img
-              src="./assets/img/HeaderMockup.png"
+              src="assets/img/HeaderMockup.png"
               alt="header-mockup"
               width="700px"
               height="500px"
@@ -128,7 +135,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <img class="img-fluid" src="./assets/img/Nosotross.jpg" />
+            <img class="img-fluid" src="assets/img/Nosotross.jpg" />
           </div>
           <div class="col">
             <h2 class="header">ABOUT US</h2>
@@ -148,7 +155,7 @@
       </div>
     </section>
 
-    <section id="caracteristicas" class="features-clean">
+    <section id="caracteristicas" class="features-clean" >
       <div class="container">
         <div class="intro">
           <h2 class="text-center">Features</h2>
@@ -192,6 +199,14 @@
               Conduct your searches and purchases quickly and efficiently with our application.
             </p>
           </div>
+
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-map-marker icon"></i>
+            <h3 class="name">GPS Device for Guides</h3>
+            <p class="description">
+                Our GPS device allows guides to locate tourists, and vice versa, ensuring a seamless and enjoyable travel experience.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -202,7 +217,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-center">
-            <img class="img-fluid" src="./assets/img/screenshot2.png" />
+            <img class="img-fluid" src="assets/img/screenshot2.png" />
           </div>
           <div class="col-md-6 p-40">
             <h2>LEARN MORE ABOUT OUR APPLICATION</h2>
@@ -267,6 +282,103 @@
     </section>
     <!-- Subscriptions Section End -->
 
+    <!-- GPS Bracelet Service Section Start -->
+    <section id="gps-service" class="team-boxed p-20">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">GPS Bracelet Service</h2>
+          <p class="text-center">
+            Enhance your travel experience with our optional GPS bracelet service for added security and convenience.
+          </p>
+        </div>
+        <div class="row people">
+          <div class="col-md-6 col-lg-6 item mx-auto">
+            <div class="box text-center">
+              <h3 class="name">Stay Safe with GPS</h3>
+              <p class="title">Optional Service</p>
+              <p class="description">
+                When booking a travel package, tourists have the choice to add a GPS bracelet service for an additional layer of security and peace of mind.
+              </p>
+              <div class="features">
+                <p><strong>Key Features:</strong></p>
+                <ul style="text-align: left;">
+                  <li>Real-time location tracking for added safety during your travels.</li>
+                  <li>Access to emergency assistance and support in case of unexpected situations.</li>
+                  <li>Convenient return process for the GPS bracelet after the trip, ensuring its reuse for future travelers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GPS Bracelet Service Section End -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Our Great Team</p>
+        </div>
+
+        <div class="row team-row" data-aos="fade-left">
+
+          <div class="col-lg-2 col-md-3 mx-auto">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/Ludwin.png" class="img-fluid" alt="Edgar"></div>
+              <div class="member-info">
+                <h4>Ludwin Reyes</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5 mt-lg-0 mx-auto">
+            <div class="member" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/Nicole.png" class="img-fluid" alt="Nicole"></div>
+              <div class="member-info">
+                <h4>Nicole Price</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5 mt-lg-0 mx-auto">
+            <div class="member" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/Dominik.jpg" class="img-fluid" alt="Dominik"></div>
+              <div class="member-info">
+                <h4>Dominik Mendoza</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5 mt-md-0 mx-auto">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/Ray.png" class="img-fluid" alt="Ray"></div>
+              <div class="member-info">
+                <h4>Ryan Sweden</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 mt-5 mt-lg-0 mx-auto">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/Johan.png" class="img-fluid" alt="Ivan"></div>
+              <div class="member-info">
+                <h4>Johan Morena</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section><!-- End Team Section -->
+
     <!-- About the Product Section Start -->
     <section class="about-the-product section-padding" id="about-the-product" data-scroll-index="5">
       <div class="container">
@@ -289,8 +401,8 @@
     <!-- Brands Section Start -->
     <div class="brands">
       <a href="#">
-        <img src="./assets/img/instacart.png" /><img src="./assets/img/kickstarter.png" />
-        <img src="./assets/img/lyft.png" /><img src="./assets/img/pinterest.png" />
+        <img src="assets/img/instacart.png" /><img src="assets/img/kickstarter.png" />
+        <img src="assets/img/lyft.png" /><img src="assets/img/pinterest.png" />
       </a>
     </div>
     <footer class="footer-clean">
@@ -319,14 +431,8 @@
             type="text/javascript"
             src="https://www.gstatic.com/charts/loader.js"
     ></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/script.js"></script>
-
 	</body>
-
-
-
-
-
 </html>
